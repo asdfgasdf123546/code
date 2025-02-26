@@ -1,0 +1,19 @@
+#generate a num between 1-100
+#get and store a number from the user
+#check IF num is Bigger than the guess, print that
+#check if num is smaller, prtin that
+#check if equal, print that
+import random
+isright = False
+num = random.randrange(0,100)
+print (num)
+while isright == False:
+    guess = int(input("guess a number 1-100"))
+    if num < guess:
+        print ("too high try again")
+    elif num > guess:
+        print ("too low try again")
+    else:
+        print ("you got it!")
+        isright = True
+
