@@ -1,0 +1,30 @@
+def Validate_password(word):
+    if any(c.isupper() for c in word):
+        print("The string contains an uppercase letter.")
+    else:
+        print("The string does not contain any uppercase letters.")
+    
+    for i in word:
+        if i == "1" or i == "2" or i == "3" or i == "4" or i == "5" or i == "6" or i == "7" or i == "8" or i == "9" or i == "10"or i == "11" or i == "12" or i == "13" or i == "14" or i == "15":
+            print("The string contains a number")
+        else:
+            print("The string does not contain a number")
+    
+    
+    counter = 0  
+    for i in word:
+       counter+=1
+    if counter >= 8:
+        print("The password is long enough")
+    else:
+        print("The counter is below 8")
+        
+ 
+    #set up an empty counter
+    #use a for loop to walk through the word
+    #increment the counter
+    #check IF the counter is 8 or bigger
+    
+    
+    
+Validate_password("8Jeremy")
